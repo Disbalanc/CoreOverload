@@ -1,0 +1,121 @@
+{
+  "enemies": [
+    {
+      "id": "assembly_drone",
+      "name": "Дрон-Сборщик",
+      "hp_min": 18,
+      "hp_max": 24,
+      "pattern": [
+        { "type": "attack", "value": 5 },
+        { "type": "defend", "value": 4 },
+        { "type": "attack", "value": 7 }
+      ]
+    },
+    {
+      "id": "patrol_bot",
+      "name": "Патрульный Бот",
+      "hp_min": 22,
+      "hp_max": 28,
+      "pattern": [
+        { "type": "defend", "value": 6 },
+        { "type": "attack", "value": 6 },
+        { "type": "debuff", "value": 2 }
+      ]
+    },
+    {
+      "id": "quality_spider",
+      "name": "Паук-Контролёр",
+      "hp_min": 14,
+      "hp_max": 18,
+      "pattern": [
+        { "type": "attack", "value": 3 },
+        { "type": "debuff", "value": 3 },
+        { "type": "attack", "value": 4 }
+      ]
+    },
+    {
+      "id": "conveyor_arm",
+      "name": "Конвейерный Манипулятор",
+      "hp_min": 28,
+      "hp_max": 34,
+      "pattern": [
+        { "type": "defend", "value": 8 },
+        { "type": "attack", "value": 10 }
+      ]
+    },
+    {
+      "id": "sentry_mech",
+      "name": "Сторожевой Мех",
+      "hp_min": 48,
+      "hp_max": 55,
+      "pattern": [
+        { "type": "attack", "value": 12 },
+        { "type": "defend", "value": 10 },
+        { "type": "attack_and_defend", "value": 8 }
+      ]
+    },
+    {
+      "id": "ids_scanner",
+      "name": "IDS-Сканер",
+      "hp_min": 40,
+      "hp_max": 48,
+      "pattern": [
+        { "type": "debuff", "value": 4 },
+        { "type": "attack", "value": 9 },
+        { "type": "defend", "value": 7 },
+        { "type": "attack", "value": 11 }
+      ]
+    },
+    {
+      "id": "lithography_master",
+      "name": "МАСТЕР-КОНТРОЛЛЕР ЛИТОГРАФИИ",
+      "hp_min": 100,
+      "hp_max": 100,
+      "pattern": [
+        { "type": "attack", "value": 10 },
+        { "type": "defend", "value": 8 },
+        { "type": "attack", "value": 15 },
+        { "type": "debuff", "value": 4 },
+        { "type": "attack_and_defend", "value": 10 }
+      ]
+    }
+  ],
+
+  "encounters": [
+    {
+      "id": "basic_single_drone",
+      "type": "basic",
+      "enemies": ["assembly_drone"]
+    },
+    {
+      "id": "basic_two_drones",
+      "type": "basic",
+      "enemies": ["assembly_drone", "patrol_bot"]
+    },
+    {
+      "id": "basic_spider_swarm",
+      "type": "basic",
+      "enemies": ["quality_spider", "quality_spider"]
+    },
+    {
+      "id": "basic_conveyor",
+      "type": "basic",
+      "enemies": ["conveyor_arm"]
+    },
+    {
+      "id": "elite_mech",
+      "type": "elite",
+      "enemies": ["sentry_mech"]
+    },
+    {
+      "id": "elite_ids",
+      "type": "elite",
+      "enemies": ["ids_scanner"]
+    },
+    {
+      "id": "boss_lithography",
+      "type": "boss",
+      "enemies": ["lithography_master"]
+    }
+  ]
+}

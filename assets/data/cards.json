@@ -1,0 +1,172 @@
+{
+  "cards": [
+    {
+      "id": "ddos_strike",
+      "name": "DDoS-удар",
+      "description": "Наносит 6 урона.",
+      "upgraded_name": "DDoS-удар+",
+      "upgraded_description": "Наносит 9 урона.",
+      "type": "attack",
+      "rarity": "common",
+      "target": "single_enemy",
+      "cost": 1,
+      "effects": [{"type": "damage", "value": 6}],
+      "upgraded_effects": [{"type": "damage", "value": 9}]
+    },
+    {
+      "id": "buffer_overflow",
+      "name": "Переполнение буфера",
+      "description": "Наносит 12 урона. Игнорирует файрвол.",
+      "upgraded_name": "Переполнение буфера+",
+      "upgraded_description": "Наносит 16 урона. Игнорирует файрвол.",
+      "type": "attack",
+      "rarity": "uncommon",
+      "target": "single_enemy",
+      "cost": 2,
+      "effects": [{"type": "damage_ignore_block", "value": 12}],
+      "upgraded_effects": [{"type": "damage_ignore_block", "value": 16}]
+    },
+    {
+      "id": "cooling",
+      "name": "Охлаждение",
+      "description": "+5 файрвола.",
+      "upgraded_name": "Охлаждение+",
+      "upgraded_description": "+8 файрвола.",
+      "type": "skill",
+      "rarity": "common",
+      "target": "self",
+      "cost": 1,
+      "effects": [{"type": "block", "value": 5}],
+      "upgraded_effects": [{"type": "block", "value": 8}]
+    },
+    {
+      "id": "core_isolation",
+      "name": "Изоляция ядра",
+      "description": "+12 файрвола.",
+      "type": "skill",
+      "rarity": "uncommon",
+      "target": "self",
+      "cost": 2,
+      "effects": [{"type": "block", "value": 12}],
+      "upgraded_effects": [{"type": "block", "value": 16}]
+    },
+    {
+      "id": "overclock",
+      "name": "Разгон ЦПУ",
+      "description": "+2 энергии. 3 урона себе.",
+      "upgraded_description": "+2 энергии. 2 урона себе.",
+      "type": "skill",
+      "rarity": "common",
+      "target": "self",
+      "cost": 0,
+      "effects": [
+        {"type": "gain_energy", "value": 2},
+        {"type": "self_damage", "value": 3}
+      ],
+      "upgraded_effects": [
+        {"type": "gain_energy", "value": 2},
+        {"type": "self_damage", "value": 2}
+      ]
+    },
+    {
+      "id": "trojan",
+      "name": "Троян",
+      "description": "Утечка 4 на цель.",
+      "upgraded_description": "Утечка 6 на цель.",
+      "type": "skill",
+      "rarity": "uncommon",
+      "target": "single_enemy",
+      "cost": 2,
+      "effects": [{"type": "apply_status", "value": 4, "status_id": "leak"}],
+      "upgraded_effects": [{"type": "apply_status", "value": 6, "status_id": "leak"}]
+    },
+    {
+      "id": "data_parsing",
+      "name": "Парсинг данных",
+      "description": "Взять 2 карты.",
+      "upgraded_description": "Взять 3 карты.",
+      "type": "skill",
+      "rarity": "common",
+      "target": "self",
+      "cost": 1,
+      "effects": [{"type": "draw_cards", "value": 2}],
+      "upgraded_effects": [{"type": "draw_cards", "value": 3}]
+    },
+    {
+      "id": "scan_ports",
+      "name": "Скан портов",
+      "description": "3 урона. Взять 1 карту.",
+      "type": "attack",
+      "rarity": "common",
+      "target": "single_enemy",
+      "cost": 0,
+      "effects": [
+        {"type": "damage", "value": 3},
+        {"type": "draw_cards", "value": 1}
+      ]
+    },
+    {
+      "id": "sql_injection",
+      "name": "SQL-Инъекция",
+      "description": "9 урона. Утечка 2.",
+      "type": "attack",
+      "rarity": "uncommon",
+      "target": "single_enemy",
+      "cost": 2,
+      "effects": [
+        {"type": "damage", "value": 9},
+        {"type": "apply_status", "value": 2, "status_id": "leak"}
+      ]
+    },
+    {
+      "id": "kernel_panic",
+      "name": "Паника ядра",
+      "description": "15 урона.",
+      "type": "attack",
+      "rarity": "rare",
+      "target": "single_enemy",
+      "cost": 2,
+      "effects": [{"type": "damage", "value": 15}]
+    },
+    {
+      "id": "sandbox",
+      "name": "Песочница",
+      "description": "+8 файрвола.",
+      "type": "skill",
+      "rarity": "uncommon",
+      "target": "self",
+      "cost": 1,
+      "effects": [{"type": "block", "value": 8}]
+    },
+    {
+      "id": "backdoor",
+      "name": "Бэкдор",
+      "description": "+2 энергии.",
+      "type": "skill",
+      "rarity": "uncommon",
+      "target": "self",
+      "cost": 0,
+      "effects": [{"type": "gain_energy", "value": 2}]
+    },
+    {
+      "id": "zero_day",
+      "name": "Zero-Day Exploit",
+      "description": "25 урона.",
+      "type": "attack",
+      "rarity": "rare",
+      "target": "single_enemy",
+      "cost": 3,
+      "effects": [{"type": "damage", "value": 25}]
+    },
+    {
+      "id": "memory_fault",
+      "name": "Сбой памяти",
+      "description": "Бесполезно. Занимает место.",
+      "type": "curse",
+      "rarity": "curse",
+      "target": "none",
+      "cost": 1,
+      "effects": []
+    }
+  ]
+}

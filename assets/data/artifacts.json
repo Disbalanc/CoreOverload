@@ -1,0 +1,74 @@
+{
+  "artifacts": [
+    {
+      "id": "soldering_iron",
+      "name": "Паяльник инженера",
+      "description": "В начале каждого боя: +3 файрвола.",
+      "rarity": "common",
+      "trigger": "on_combat_start",
+      "effects": [
+        { "type": "gain_block", "value": 3 }
+      ]
+    },
+    {
+      "id": "usb_adapter",
+      "name": "USB-C Переходник",
+      "description": "В начале хода: +1 карта.",
+      "rarity": "common",
+      "trigger": "on_turn_start",
+      "effects": [
+        { "type": "draw_cards", "value": 1 }
+      ]
+    },
+    {
+      "id": "thermal_paste",
+      "name": "Термопаста КПТ-8",
+      "description": "В начале боя: восстанавливает 3 HP.",
+      "rarity": "common",
+      "trigger": "on_combat_start",
+      "effects": [
+        { "type": "heal_hp", "value": 3 }
+      ]
+    },
+    {
+      "id": "server_rack",
+      "name": "Серверная стойка",
+      "description": "В начале каждого хода: +1 энергия.",
+      "rarity": "rare",
+      "trigger": "on_turn_start",
+      "effects": [
+        { "type": "gain_energy", "value": 1 }
+      ]
+    },
+    {
+      "id": "neural_interface",
+      "name": "Нейроинтерфейс",
+      "description": "+10 к макс. HP навсегда.",
+      "rarity": "uncommon",
+      "trigger": "passive",
+      "effects": [
+        { "type": "increase_max_hp", "value": 10 }
+      ]
+    },
+    {
+      "id": "liquid_nitrogen",
+      "name": "Жидкий азот",
+      "description": "Разгон ЦПУ наносит на 1 урон меньше себе.",
+      "rarity": "uncommon",
+      "trigger": "passive",
+      "effects": [
+        { "type": "reduce_self_damage", "value": 1 }
+      ]
+    },
+    {
+      "id": "cryptominer",
+      "name": "Криптомайнер",
+      "description": "В начале боя: +2 файрвола.",
+      "rarity": "common",
+      "trigger": "on_combat_start",
+      "effects": [
+        { "type": "gain_block", "value": 2 }
+      ]
+    }
+  ]
+}
